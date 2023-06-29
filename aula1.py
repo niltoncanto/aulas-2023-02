@@ -24,4 +24,5 @@ auto2.ano = 2018 """
 # Imprimindo os atributos dos objetos
 print(auto1.marca, auto1.modelo, auto1.ano)
 print(auto2.marca, auto2.modelo, auto2.ano)
+print("fim do programa")
 
