@@ -26,3 +26,16 @@ print(auto1.marca, auto1.modelo, auto1.ano)
 print(auto2.marca, auto2.modelo, auto2.ano)
 print("fim do programa")
 
+def soma(a, b):
+    return a + b
+
+print(soma(1, 2))
+
+def subtracao(a, b):
+    return a - b
+
+print(subtracao(1, 2))
+
+
+def multiplicacao(a, b):    
+    return a * b
