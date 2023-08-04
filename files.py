@@ -2,6 +2,7 @@ import os
 import sys
 import stat
 import time
+import pickle
 
 # abrindo e escrevendo em arquivos
 fileHandle = open('teste.txt','w')
@@ -69,6 +70,19 @@ else:
 diretorio_atual = os.path.dirname(os.path.abspath(__file__))
 for file in os.listdir(diretorio_atual):
     print(file)
+print("\n")
+
+# gravando informações em arquivo com o módulo pickle
+fileHandle = open("pickleFile.txt", 'wb')
+teste = [1,2,3,4,5]
+pickle.dump(teste, fileHandle)
+fileHandle.close()
+print("\n")
+
+#lendo informações de arquivo com o módulo pickle
+fileHandle = open("pickleFile.txt", 'rb')
+dados_lidos = pickle.load(fileHandle)
+print(dados_lidos)  # Saída: [1, 2, 3, 4, 5]
 
 
 
